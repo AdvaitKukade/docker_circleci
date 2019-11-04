@@ -4,9 +4,9 @@ jobs:
     docker:
       - image: advaitkukade/serverside:1.0 
     steps:
-      - echo "Created Sucessfully."
-workflows:
-  workflow_1:
-    jobs:
-      - build
+      - echo "Created Sucessfully"
+#workflows:
+#  workflow_1:
+#    jobs:
+#      - build
 
