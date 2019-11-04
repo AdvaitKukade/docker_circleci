@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: advaitkukade/serverside:1.0 
+      - image: advaitkukade/serverside1:1.0 
     steps:
       - run: echo "Created Successfully."
       - run: docker run -it serverside:1.0 sh 
