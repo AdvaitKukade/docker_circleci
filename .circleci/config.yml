@@ -20,7 +20,7 @@ jobs:
           path: /home/artifact-home.txt
       
       - run: echo "Artifacts created and stored." 
-   working_directory: /   
+     working_directory: /   
 workflows:
   workflows_1:
     jobs:
