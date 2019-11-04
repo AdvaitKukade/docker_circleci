@@ -5,7 +5,7 @@ WORKDIR /serverdata
 
 COPY ./Server/createfile.sh /serverdata
 COPY ./Server/ServerFile.sh /home
-RUN apk add nano 
+RUN apk add install git-all && apk add tar && apk add gzip 
 RUN apk add openrc
 RUN apk add openssh
 RUN apk add sshpass
