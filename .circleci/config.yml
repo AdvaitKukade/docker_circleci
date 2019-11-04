@@ -6,6 +6,20 @@ jobs:
     steps:
       - run: echo "Created Successfully."
      #- run: docker run -it serverside1:1.0 sh 
+      - run: 
+          name: Creating Dummy Artifacts
+          command: | 
+            echo "My Artifact File" > /serverdata/artifact1.txt;
+            mkdir /home/artifacts/
+            echo "My Artifact file in another directory" > /home/artifact-home.txt
+      
+      - store_artifacts:
+          path: /serverdata/artifact1.txt
+      
+      - store_artifacts:
+          path: /home/artifact-home.txt
+      
+      - run: echo "Artifacts created and stored." 
 workflows:
   workflows_1:
     jobs:
