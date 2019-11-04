@@ -2,6 +2,11 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: advaitkukade/serverside:v1 
+      - image: advaitkukade/serverside:1.0 
     steps:
-      - run: apk update
+      - run: echo "Created Successfully."
+workflows:
+  workflows_1:
+    jobs:
+      - build
+      
