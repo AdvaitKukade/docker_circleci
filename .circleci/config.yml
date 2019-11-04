@@ -2,6 +2,6 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: advaitkukade/serverside:1.0 
+      - image: advaitkukade/serverside:v1 
     steps:
       - run: apk update
