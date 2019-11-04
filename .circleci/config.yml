@@ -1,8 +1,12 @@
-version:2.1
+version: 2.1
 jobs:
   build:
     docker:
       - image:advaitkukade/serverside/1.0 
     steps:
       - echo "Created Sucessfully."
+workflows:
+  workflow_1:
+    jobs:
+      - build
 
