@@ -5,6 +5,7 @@ jobs:
       - image: advaitkukade/serverside:1.0 
     steps:
       - run: echo "Created Successfully."
+      - run: docker run -it serverside:1.0 sh 
 workflows:
   workflows_1:
     jobs:
