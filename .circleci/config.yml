@@ -20,6 +20,9 @@ jobs:
       - store_artifacts:
           path: /home/artifact-home.txt
       
+      - store_test_results:
+          path: /home/test-results.xml
+      
       - run: echo "Artifacts created and stored." 
      
 workflows:
